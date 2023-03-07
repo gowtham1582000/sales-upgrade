@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Title  -->
+    <title>SALES UPGRADE | Digital Marketing Agency</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/fav.png" title="Favicon" sizes="16x16">
+
+    <!-- ====== bootstrap icons cdn ====== -->
+    <link rel="stylesheet" href="npm/bootstrap-icons%401.7.2/font/bootstrap-icons.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+
+    <!-- ====== font family ====== -->
+    <link href="css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    <link rel="stylesheet" href="assets/css/lib/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/lib/lity.css">
+    <link rel="stylesheet" href="assets/css/lib/swiper.min.css">
+
+    <!-- ====== global style ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ====== start loading page ====== -->
+    <!-- <div id="preloader">
+    </div> -->
+
+    <div class="nav-container position-absolute w-100">
+
+    <!-- ====== start navbar ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent style-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/sales-upgrade.png" alt="salesupgrade-digital-marketing-agency">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- ====== end navbar ====== -->
+    </div>
+
+    <!--Contents-->
+    <main class="comming-soon-page style-5">
+
+        <!-- ====== start careers-features ====== -->
+        <section class="comming-soon style-5">
+            <div class="container">
+                <div class="content">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="info">
+                                <div class="timing">
+                                    <div class="item">
+                                        <h2 id="days"></h2>
+                                        <small> days </small>
+                                    </div>
+                                    <div class="item">
+                                        <h2 id="hours"></h2>
+                                        <small> Hours </small>
+                                    </div>
+                                    <div class="item">
+                                        <h2 id="minutes"></h2>
+                                        <small> Minute </small>
+                                    </div>
+                                    <div class="item">
+                                        <h2 id="seconds"></h2>
+                                        <small> Seconds </small>
+                                    </div>
+                                </div>
+                                <h3> We Are Coming Very Soon </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/comming_man_shape.png" alt="" class="comming_man_shape slide_up_down">
+            <img src="assets/img/comming_chat_shape.png" alt="" class="comming_chat_shape slide_up_down">
+            <img src="assets/img/comming_light_shape.png" alt="" class="comming_light_shape slide_up_down">
+        </section>
+        <!-- ====== end timeline ====== -->
+
+    </main>
+    <!--End-Contents-->
+
+    <!-- ====== start to top button ====== -->
+    <a href="#" class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-up fs-6 text-dark"></i>
+    </a>
+    <!-- ====== end to top button ====== -->
+
+    <!-- ====== request ====== -->
+    <script src="assets/js/lib/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lib/wow.min.js"></script>
+    <script src="assets/js/lib/jquery.fancybox.js"></script>
+    <script src="assets/js/lib/lity.js"></script>
+    <script src="assets/js/lib/swiper.min.js"></script>
+    <script src="assets/js/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/js/lib/jquery.counterup.js"></script>
+    <!-- <script src="assets/js/lib/pace.js"></script> -->
+    <script src="assets/js/lib/scrollIt.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24,
+        week = hour * 24 * 7;
+
+        let countDown = new Date('Mar 16, 2023 11:30').getTime(),
+            x = setInterval(function() {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById('days').innerText = Math.floor(distance / (day)),
+                document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                //if (distance < 0) {
+                //  clearInterval(x);
+                //  'IT'S MY BIRTHDAY!;
+                //}
+
+            }, second)
+    </script>
+
+</body>
+
+</html>
