@@ -34,6 +34,13 @@
     <!-- ====== global style ====== -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="landing-preview/css/preview-style.css">
+
+      <!-- magnific-popup css cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+      <!-- custom css file link  -->
+    
+  
 </head>
 
 <body>
@@ -637,6 +644,125 @@
             </div>
         </section>
         <!--Contents-->
+
+        <div class="gallery">
+            <div class="section-head text-center style-4">
+                <small class="title_small">Our Works</small>
+                <h2 class="mb-30">Website designs & Graphic designs</h2>
+                <p>Highly skilled team of multi-disciplinary designers</p>
+            </div>
+
+            <ul class="controls">
+                <li class="buttons active" data-filter="all">all</li>
+                <li class="buttons" data-filter="ice-cream">ice-cream</li>
+                <li class="buttons" data-filter="chocolate">chocolate</li>
+                <li class="buttons" data-filter="cake">cake</li>
+                <li class="buttons" data-filter="juice">juice</li>
+                <li class="buttons" data-filter="sandwich">sandwich</li>
+            </ul>
+        
+            <div class="image-container">
+        
+                <a href="images/ice-cream1.jpg" class="image ice-cream">
+                    <img src="images/ice-cream1.jpg" alt="">
+                </a>
+                <a href="images/ice-cream2.jpg" class="image ice-cream">
+                    <img src="images/ice-cream2.jpg" alt="">
+                </a>
+                <a href="images/ice-cream3.jpg" class="image ice-cream">
+                    <img src="images/ice-cream3.jpg" alt="">
+                </a>
+        
+                <a href="images/chocolate1.jpg" class="image chocolate">
+                    <img src="images/chocolate1.jpg" alt="">
+                </a>
+                <a href="images/chocolate2.jpg" class="image chocolate">
+                    <img src="images/chocolate2.jpg" alt="">
+                </a>
+        
+                <a href="images/cake1.jpg" class="image cake">
+                    <img src="images/cake1.jpg" alt="">
+                </a>
+                <a href="images/cake2.jpg" class="image cake">
+                    <img src="images/cake2.jpg" alt="">
+                </a>
+                <a href="images/cake3.jpg" class="image cake">
+                    <img src="images/cake3.jpg" alt="">
+                </a>
+                <a href="images/cake4.jpg" class="image cake">
+                    <img src="images/cake4.jpg" alt="">
+                </a>
+                <a href="images/cake5.jpg" class="image cake">
+                    <img src="images/cake5.jpg" alt="">
+                </a>
+        
+                <a href="images/juice1.jpg" class="image juice">
+                    <img src="images/juice1.jpg" alt="">
+                </a>
+                <a href="images/juice2.jpg" class="image juice">
+                    <img src="images/juice2.jpg" alt="">
+                </a>
+                <a href="images/juice3.jpg" class="image juice">
+                    <img src="images/juice3.jpg" alt="">
+                </a>
+        
+                <a href="images/sandwich1.jpg" class="image sandwich">
+                    <img src="images/sandwich1.jpg" alt="">
+                </a>
+                <a href="images/sandwich2.jpg" class="image sandwich">
+                    <img src="images/sandwich2.jpg" alt="">
+                </a>
+                <a href="images/sandwich3.jpg" class="image sandwich">
+                    <img src="images/sandwich3.jpg" alt="">
+                </a>
+                <a href="images/sandwich4.jpg" class="image sandwich">
+                    <img src="images/sandwich4.jpg" alt="">
+                </a>
+        
+            </div>
+        
+        </div>
+        
+        
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- magnific popup js cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        
+        <script>
+        
+        $(document).ready(function(){
+        
+            $('.buttons').click(function(){
+        
+                $(this).addClass('active').siblings().removeClass('active');
+        
+                var filter = $(this).attr('data-filter')
+        
+                if(filter == 'all'){
+                    $('.image').show(400);
+                }else{
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(400);
+                }
+        
+            });
+        
+            $('.gallery').magnificPopup({
+        
+                delegate:'a',
+                type:'image',
+                gallery:{
+                    enabled:true
+                }
+        
+            });
+        
+        });
+        
+        </script>
+            
         
     <main class="portfolio-page style-1">
         <!-- ====== start portfolio-projects ====== -->
@@ -1019,21 +1145,21 @@
             <img src="assets/img/screenshots/hand.png" alt="" class="mob-hand">
         </div>-->
         <!-- ====== end screenshots  ====== -->
-
-        
         <!-- ====== end portfolio-projects ====== -->
-
         <!-- Container for the image gallery -->
-</main>
+</main><br>
     <!--End-Contents-->
-
-<div class="row">
+<div class="container">
+ <div class="row">
     <div class="col-md-12 col-lg-12">
+        <div class="section-head text-center style-4">
+            <small class="title_small">Client Reels</small>
+    </div>
         <div class='sk-ww-instagram-reels' data-embed-id='122466'></div><script src='https://widgets.sociablekit.com/instagram-reels/widget.js' async defer></script>
     </div>
-</div>
-    
-        <!-- ====== start clients ====== -->
+ </div>
+</div>       
+ <!-- ====== start clients ====== -->
         <section class="clients section-padding style-5">
             <div class="section-head text-center style-4">
                 <small class="title_small">Featured in</small>
