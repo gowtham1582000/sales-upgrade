@@ -18056,21 +18056,20 @@ header.style-6 .info h1 span small {
 }
 
 .gallery .controls .buttons{
-  height:40px;
-  width: 140px;
-  background:#fff;
-  color:#666;
-  font-size: 20px;
-  line-height: 40px;
+  border: 0;
+  font-weight: bold;
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 17px;
   cursor: pointer;
-  margin:20px;
-  box-shadow: 0 3px 5px rgba(0,0,0,.3);
-  text-align: center;
+  margin:10px;
+ 
+  
 }
 
 .gallery .controls .buttons.active{
-  background:coral;
-  color:#fff;
+  
+  color: #ffb703;
 }
 
 .gallery .image-container{
