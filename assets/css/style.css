@@ -156,7 +156,7 @@ TABLE OF CONTENTS:-
 }
 
 .bg-gray {
-  background: var(--color-gray) !important;
+  background: var(--color-blue4) !important;
 }
 
 .bg-gray2 {
@@ -2143,7 +2143,7 @@ small.text {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../img/shap_style_6.png);
+  background-image: url(../img/choose-us-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
