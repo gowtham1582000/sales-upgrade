@@ -156,7 +156,7 @@ TABLE OF CONTENTS:-
 }
 
 .bg-gray {
-  background: var(--color-blue4) !important;
+  background: var(--color-gray2) !important;
 }
 
 .bg-gray2 {
@@ -642,7 +642,7 @@ small.text {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  color: var(--color-main);
+  color: white;
   font-size: 15px;
   font-weight: bold;
 }
@@ -652,11 +652,11 @@ small.text {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  background: #fff;
+  background: #ffb703;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: var(--color-main-grad);
+  background: black;
 }
 .swiper-button-next:hover::after,
 .swiper-button-prev:hover::after {
@@ -4899,7 +4899,8 @@ header.style-15 .countdown-content .logos img {
   animation: rotate-center 100s linear infinite both;
 }
 .about.style-4 .content.sec-content .bubble2 {
-  position: absolute;
+  position: absolute
+  ;
   right: 0;
   top: 0;
   width: 50%;
@@ -7424,7 +7425,7 @@ header.style-15 .countdown-content .logos img {
 .testimonials.style-4 .content .play-btn .icon {
   width: 42px;
   height: 42px;
-  border: 1px solid #5842bc99;
+  border: 1px solid black;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -8216,7 +8217,7 @@ header.style-15 .countdown-content .logos img {
 .pricing-card.style-3 .card-body li i {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  color: var(--color-blue2);
+  color: #ffb703;
   font-size: 20px;
   margin-right: 10px;
 }
