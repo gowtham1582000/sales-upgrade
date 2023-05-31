@@ -811,12 +811,10 @@ small.text {
   left: 0;
   height: 50%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#7491f8), to(#80d3ff));
-  background: -o-linear-gradient(left, #7491f8, #80d3ff);
-  background: linear-gradient(to right, #7491f8, #80d3ff);
-  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  background: -webkit-gradient(linear, left top, right top, from(#ffb703), to(#ffb703));
+  background: -o-linear-gradient(left, #ffb703, #ffb703);
+  background: linear-gradient(to right, #ffb703, #ffb703);
+ 
 }
 
 #preloader:before {
@@ -861,7 +859,7 @@ small.text {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: #0005;
+  background-color: #ffb703;
   display: none;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -885,7 +883,7 @@ small.text {
   position: absolute;
   top: calc(50% - 38px);
   left: 50%;
-  color: #fff;
+  color: #ffb703;
   width: 100px;
   height: 100px;
   margin: -7px 0 0 -45px;
